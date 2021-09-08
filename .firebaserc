@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "sajeer-zeji"
+  },
+  "targets": {
+    "sajeer-zeji": {
+      "hosting": {
+        "sajeer-zeji": [
+          "sajeer-zeji",
+          "sajeerzeji"
+        ]
+      }
+    }
+  }
+}
