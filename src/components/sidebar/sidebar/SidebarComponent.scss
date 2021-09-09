@@ -1,0 +1,17 @@
+.app-sidebar {
+  width: 5rem;
+  height: 100vh;
+  background-color: var(--sidebar-bg);
+  display: flex;
+  align-items: center;
+
+  .app-sidebar-content {
+    border: 1px solid white;
+    width: 5rem;
+  }
+
+  .app-sidebar-content-item {
+    width: 5rem;
+    height: 5rem;
+  }
+}
