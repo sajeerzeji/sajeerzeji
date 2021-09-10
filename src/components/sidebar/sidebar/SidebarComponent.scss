@@ -1,17 +1,120 @@
 .app-sidebar {
-  width: 5rem;
+  width: var(--app-sidebar);
   height: 100vh;
   background-color: var(--sidebar-bg);
   display: flex;
   align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  transition: width 0.5s;
 
   .app-sidebar-content {
-    border: 1px solid white;
-    width: 5rem;
+    width: 100%;
   }
 
   .app-sidebar-content-item {
-    width: 5rem;
-    height: 5rem;
+    width: var(--app-sidebar);
+    color: var(--font-color-primary);
+    height: 2.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    cursor: pointer;
+  }
+
+  .app-sidebar-content-item-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    img {
+      width: 30px;
+      margin-left: 0.3rem;
+      margin-right: 0.3rem;
+    }
+  }
+
+  .app-sidebar-content-item-caption {
+    display: none;
+    align-items: center;
+    font-weight: bolder;
+    .app-sidebar-content-item-caption-text {
+      padding-left: 1rem;
+    }
+  }
+
+  .app-sidebar-content-item-twitter:hover {
+    background-color: #26A6D1;
+    color: #FFFFFF;
+  }
+
+  .app-sidebar-content-item-linkedin:hover {
+    background-color: #007AB9;
+    color: #FFFFFF;
+  }
+
+  .app-sidebar-content-item-github:hover {
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+  .app-sidebar-content-item-discord:hover {
+    background-color: #7289DA;
+    color: #FFFFFF;
+  }
+
+  .app-sidebar-content-item-discord:hover {
+    background-color: #7289DA;
+    color: #FFFFFF;
+  }
+
+  .app-sidebar-content-item-medium:hover {
+    background-color: #FFFFFF;
+    color: #000000;
+  }
+
+  .app-sidebar-content-item-dev-folio:hover {
+    background-color: #3770FF;
+    color: #FFFFFF;
+  }
+
+  .app-sidebar-content-item-buy-me-a-coffee:hover {
+    background-color: #FFDD00;
+    color: #000000;
+  }
+
+  .app-sidebar-content-item-telegram:hover {
+    background-color: #7AA5DA;
+    color: #FFFFFF;
+  }
+
+  .app-sidebar-content-item-meetup:hover {
+    background-color: #ED1C40;
+    color: #FFFFFF;
+  }
+
+  .app-sidebar-content-item-instagram:hover {
+    background-color: #F75274;
+    color: #FFFFFF;
+  }
+
+  .app-sidebar-content-item-facebook:hover {
+    background-color: #1976D2;
+    color: #FFFFFF;
+  }
+}
+
+.app-sidebar-closed {
+  --app-sidebar: 2.5rem;
+  .app-sidebar-content-item-caption {
+    display: none;
+  }
+}
+
+.app-sidebar-opened {
+  --app-sidebar: 10rem;
+  .app-sidebar-content-item-caption {
+    display: flex;
   }
 }
