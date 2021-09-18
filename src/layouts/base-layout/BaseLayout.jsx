@@ -11,7 +11,9 @@ export default function BaseLayoutComponent() {
             <TopBarComponent></TopBarComponent>
 
             <div className={"base-layout-content-container card"}>
-                <StoryBoardComponent></StoryBoardComponent>
+                <div className={"card-body"}>
+                    <StoryBoardComponent></StoryBoardComponent>
+                </div>
             </div>
         </div>
     )

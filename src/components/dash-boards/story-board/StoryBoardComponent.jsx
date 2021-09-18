@@ -3,11 +3,17 @@ import {ThemeUtils} from "../../../utils/theme/ThemeUtils";
 import {Scrollbars} from "react-custom-scrollbars";
 import TwitterFeedComponent from "../../feed/social/twitter-feed/TwitterFeedComponent";
 import MediumFeedComponent from "../../feed/social/medium-feed/MeediumFeedComponent";
+import GithubProfileComponent from "../../feed/dev/github/github-profile/GithubProfileComponent";
 
 export default function StoryBoardComponent() {
     return(
         <Scrollbars class={"w-100 h-100"}>
             <div className={"row"}>
+                <div className={"row"}>
+                    <div className={"card col-md-6"}>
+                        <GithubProfileComponent></GithubProfileComponent>
+                    </div>
+                </div>
                 <div className={"card col-md-6 col-lg-3"}>
                     <TwitterFeedComponent></TwitterFeedComponent>
                 </div>
