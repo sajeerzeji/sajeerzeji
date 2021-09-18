@@ -1,5 +1,7 @@
-import './SidebarComponent.scss';
 import React from 'react';
+import './SideBarComponent.scss';
+import { Scrollbars } from 'react-custom-scrollbars';
+
 import socialIconTwitter from '../../../assets/images/icons/social/twitter-icon.svg';
 import socialIconLinkedIn from '../../../assets/images/icons/social/linkedin-icon.svg';
 import socialIconGithub from '../../../assets/images/icons/social/github-icon.svg';
@@ -14,11 +16,11 @@ import socialIconFacebook from '../../../assets/images/icons/social/facebook-ico
 
 const sidebarReference = React.createRef();
 
-export default function SidebarComponent() {
+export default function SideBarComponent() {
     const sidebarItems = fetchSidebarItems();
     return(
         <div className={"app-sidebar app-sidebar-closed"}  onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} ref={sidebarReference}>
-            <div className={"app-sidebar-content"}>
+            <Scrollbars horizontal={false} className={"app-sidebar-content"}>
                 {
                     sidebarItems.map(
                         item => (
@@ -34,7 +36,7 @@ export default function SidebarComponent() {
                         )
                     )
                 }
-            </div>
+            </Scrollbars>
         </div>
     )
 }

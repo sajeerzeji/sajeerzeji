@@ -9,9 +9,13 @@
   top: 0;
   bottom: 0;
   transition: width 0.5s;
+  padding-top: 60px;
+  z-index: var(--sidebar-z-index);
 
   .app-sidebar-content {
     width: 100%;
+    display: flex;
+    align-items: center;
   }
 
   .app-sidebar-content-item {
@@ -29,7 +33,7 @@
     display: flex;
     align-items: center;
     img {
-      width: 30px;
+      width: 22px;
       margin-left: 0.3rem;
       margin-right: 0.3rem;
     }

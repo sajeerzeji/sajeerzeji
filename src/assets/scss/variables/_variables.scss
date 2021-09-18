@@ -1,13 +1,21 @@
-.theme-dark {
-  --app-bg: #2b2b2b;
+.app-theme-dark {
+  --app-bg: #2B2B2B;
   --sidebar-bg: #000000;
   --card-bg: #000000;
-  --font-color-primary: #cdcdcdcd;
+  --font-color-primary: #CDCDCDCD;
+  --sidebar-z-index: 100;
+  --topbar-z-index: 99;
+  --dark-mode-light-btn-display: block;
+  --dark-mode-dark-btn-display: none;
 }
 
-.theme-light {
-  --app-bg: #b0d9cf;
-  --sidebar-bg: #ffffff;
-  --card-bg: #ffffff;
+.app-theme-light {
+  --app-bg: #B0D9CF;
+  --sidebar-bg: #FFFFFF;
+  --card-bg: #FFFFFF;
   --font-color-primary: #000000;
+  --sidebar-z-index: 100;
+  --topbar-z-index: 99;
+  --dark-mode-light-btn-display: none;
+  --dark-mode-dark-btn-display: block;
 }

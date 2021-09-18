@@ -1,0 +1,11 @@
+.base-layout-content-container {
+  background-color: var(--card-bg);
+  width: -webkit-calc(100vw - 3.2rem);
+  width:    -moz-calc(100vw - 3.2rem);
+  width:         calc(100vw - 3.2rem);
+  height: -webkit-calc(100vh - 2.8rem);
+  height:   -moz-calc(100vh - 2.8rem);
+  height:        calc(100vh - 2.8rem);
+  margin-top: 2.8rem;
+  margin-left: 2.8rem;
+}
