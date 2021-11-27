@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Patrick+Hand+SC|Roboto&display=swap');
+
+.invitation-container {
+  background-color: rgba(255, 255, 255, 0.6);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
+.invitation-content {
+
+}
+
+.invitation-content-heading {
+  font-family: 'Patrick Hand SC', cursive;
+  font-size: 80px;
+  font-weight: bolder;
+}
+
+.invitation-content-sub-heading {
+  font-family: 'Patrick Hand SC', cursive;
+  font-size: 50px;
+}
+
+.invitation-content-sub-heading-description {
+  font-size: 25px;
+}
+
+.invitation-content-description {
+  font-family: 'Patrick Hand SC', cursive;
+  font-size: 30px;
+  font-weight: bolder;
+  color: #282828;
+}
+
+
+@media screen and (max-width: 500px) {
+  .invitation-content-heading {
+    font-size: 50px;
+  }
+}
